@@ -9,21 +9,21 @@ from dotenv import load_dotenv
 # load environment variables
 load_dotenv()
 
-# configure key
+# initialize configure key
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
 
-# initialize gemini pro model
+# method to initialize gemini model
 def initialize_model(model_name="gemini-1.5-flash"):
     model = genai.GenerativeModel(model_name)
     return model
 
 
-
+# method to read the uploaded image in bytes
 def get_image_bytes(uploaded_image):
     if uploaded_image is not None:
-        # read the uploaded image in bytes
+        
         image_bytes = uploaded_image.getvalue()
 
         image_info = [
@@ -37,17 +37,13 @@ def get_image_bytes(uploaded_image):
         raise FileNotFoundError("Upload Valid image file!")
     
 
-
+# method to get the response from the Gemini API
 def get_response(model, model_behavior, image, prompt):
         response = model.generate_content([model_behavior, image[0], prompt])
         return response.text
 
 
-
-    
-
 def main():
-
 
     # initialize the gemini-pro-vision
     model = initialize_model("gemini-1.5-flash")
