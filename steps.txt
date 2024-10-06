@@ -1,0 +1,16 @@
+1. Change the terminal to command prompt
+
+2. Create a new virtual environment
+	python -m venv pdfscanner
+
+3. Activate the environment:
+	pdfscanner\Scripts\activate
+
+4. Install the depencies
+    pip install -r requirements.txt
+
+5. get a free API key from https://aistudio.google.com/app/apikey
+
+
+6. Run the APP
+streamlit run app.py
