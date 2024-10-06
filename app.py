@@ -47,6 +47,17 @@ def get_response(model, model_behavior, image, prompt):
     
 
 def main():
+
+
+    # initialize the gemini-pro-vision
+    model = initialize_model("gemini-1.5-flash")
+
+    # set the model behavior
+    model_behavior = """
+            Your are a finance operations expert who understands overall structure of the invoice and has a deep understanding of it.
+            You will be shared, the invoice image and you have to answer the question based on the information available in the image.
+            """
+    
     # create the streamlit ui and get prompt along with image
     st.set_page_config(page_title="Invoice Extraction Bot")
     st.title("Invoice Extraction Bot 🤖 by Oracle Guy")
@@ -54,8 +65,13 @@ def main():
 
     # Read teh prompt in text box
     prompt = st.text_input("Enter your prompt" ,key="prompt")
-    # interface to upload image
+  
+
+     # create submit button, to submit image along with image
     submit = st.button("Upload & Submit")
+
+
+    # interface to upload image
     with st.sidebar:
         uploaded_image = st.file_uploader("Choose an image and Click on the Submit Button", type=["jpg", "png", "jpeg"])
         if uploaded_image is not None: # file upload handling
@@ -63,19 +79,8 @@ def main():
             # display the invoice image
             st.image(image, caption="Your image", use_column_width=True)
 
-            # create submit button, to submit image along with image
-            
-    
-            # initialize the gemini-pro-vision
-            model = initialize_model("gemini-1.5-flash")
 
-            # set the model behavior
-            model_behavior = """
-            Your are a finance operations expert who understands overall structure of the invoice and has a deep understanding of it.
-            You will be shared, the invoice image and you have to answer the question based on the information available in the image.
-            """
-
-             # if user pressed submit button
+    # if user pressed submit button
     if submit or prompt:
             if len(prompt) > 0:
                     # get uploaded image file in bytes
