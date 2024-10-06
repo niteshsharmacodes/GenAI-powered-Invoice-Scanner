@@ -50,14 +50,14 @@ def main():
 
     # set the model behavior
     model_behavior = """
-            Your are a finance operations expert who understands overall structure of the invoice and has a deep understanding of it.
-            You will be shared, the invoice image and you have to answer the question based on the information available in the image.
+            You are a finance operations expert who understands the overall structure of the invoice and has a deep understanding of it.
+            You will be shared with, the invoice image and you have to answer the question based on the information available in the image.
             """
     
     # create the streamlit ui and get prompt along with image
     st.set_page_config(page_title="Invoice Extraction Bot")
     st.title("Invoice Extraction Bot 🤖 by Oracle Guy")
-    st.subheader("I can help you in answering any question relted to the your invoice:")
+    st.subheader("I can help you in answering any question related to the your invoice:")
 
     # Read teh prompt in text box
     prompt = st.text_input("Enter your prompt" ,key="prompt")
