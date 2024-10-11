@@ -14,7 +14,7 @@ Google AI Studio API Link: https://aistudio.google.com/app/apikey
 
 
 Buy Me a Coffee: 
-buymeacoffee.com/theoracleguy
+https://buymeacoffee.com/theoracleguy
 
 1. Change the terminal to command prompt (If you are using VScode)
 
