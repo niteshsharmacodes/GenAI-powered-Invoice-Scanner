@@ -15,23 +15,20 @@ Python Download Link: https://www.python.org/downloads/
 Google AI Studio API Link: https://aistudio.google.com/app/apikey
 
 
-Buy Me a Coffee: 
-https://buymeacoffee.com/theoracleguy
 
 Steps To Be Followed:
 1. Change the terminal to command prompt (If you are using VScode)
-
 2. Create a new virtual environment
 	python -m venv pdfscanner
-
 3. Activate the environment:
 	pdfscanner\Scripts\activate
-
 4. Install the depencies
     pip install -r requirements.txt
 
 5. get a free API key from https://aistudio.google.com/app/apikey
-
-
 6. Run the APP
 streamlit run app.py
+
+If this helped you and you want to thank me:
+Buy Me a Coffee: 
+https://buymeacoffee.com/theoracleguy
