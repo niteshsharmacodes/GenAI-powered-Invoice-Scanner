@@ -5,7 +5,9 @@ https://youtu.be/rkjyzJPj2Kg
 Transform your consulting toolkit with an advanced AI solution for automated invoice processing in any ERP. Perfect for consultants looking to deliver cutting-edge automation to their clients. 
 
 🔗 Essential Resources:
+
 VScode Download link: https://code.visualstudio.com/download
+
 Python Download Link: https://www.python.org/downloads/
 (Streamlit supports till 3.12 now)
 
