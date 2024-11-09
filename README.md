@@ -1,5 +1,6 @@
 Step By Step Explanation of the code: 
 https://youtu.be/rkjyzJPj2Kg
+![Copy of Copy of jobs](https://github.com/user-attachments/assets/1fac348c-0150-47ac-a135-d652e266fb58)
 
 🔧 Revolutionize Invoice Processing: Build an AI Bot for Any ERP
 Transform your consulting toolkit with an advanced AI solution for automated invoice processing in any ERP. Perfect for consultants looking to deliver cutting-edge automation to their clients. 
