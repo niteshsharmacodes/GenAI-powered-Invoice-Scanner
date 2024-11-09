@@ -9,7 +9,7 @@ VScode Download link: https://code.visualstudio.com/download
 Python Download Link: https://www.python.org/downloads/
 (Streamlit supports till 3.12 now)
 
-github Repo Link: https://github.com/niteshsharmacodes/GenAI-powered-Invoice-Scanner
+
 Google AI Studio API Link: https://aistudio.google.com/app/apikey
 
 
